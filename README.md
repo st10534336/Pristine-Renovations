@@ -45,6 +45,8 @@ The goal of this website is to help a company by the name of Pristine Renovation
     <li>It will have a page where users can book a consultation and fill out information in a form (may need javascript)</li>
     <li>It will feature beautiful animations and transitions using the power of CSS</li>
 </ul>
+![alt text](<Images/Prestine Renovations Logo.png>)
+
 
 
 <br>
@@ -68,6 +70,7 @@ The goal of this website is to help a company by the name of Pristine Renovation
 ![desktop responsiveness image 2](Images/desktop-2.png)
 ![desktop responsiveness image 3](Images/desktop-3.png)
 
+
 <h4 style="color: pink;">--Tablet</h4>
 
 ![Tablet responsiveness image 1](Images/tablet-1.png)
@@ -80,6 +83,7 @@ The goal of this website is to help a company by the name of Pristine Renovation
 ![Mobile responsiveness image 1](Images/mobile-1.png)
 ![Mobile responsiveness image 2](Images/mobile-2.png)
 ![Mobile responsiveness image 3](Images/mobile-3.png)
+
 
 <br>
 <br>
