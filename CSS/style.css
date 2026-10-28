@@ -626,17 +626,21 @@ nav {
         }
 }
 
-#contact-page-form {
+#contact-page-form, #enquiry-page-form{
     display: flex;
     flex-flow: column;
     padding: var(--default-text-padding);
     gap: 2rem;
-    background-color:var(--maroon-primary);
+    background-color: rgb(249, 138, 138);
     font-size: 1.5rem;
 
     
 
     
+}
+
+#enquiry-page-form {
+    background-color: var(crimson);
 }
 
 .form-input-div {
@@ -690,6 +694,10 @@ nav {
     }
 }
 
+.error {
+    color: rgb(255, 29, 67);
+
+}
 #submit-button {
     margin-top: 3rem;
     width: max-content;

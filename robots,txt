@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /CSS/
+Disallow: /JavaScript/
+Disallow: /Documents/
+Disallow: /README.md
+Disallow: /website.txt
+
+Sitemap: https://yourdomain.com

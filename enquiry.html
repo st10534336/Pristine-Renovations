@@ -34,20 +34,23 @@
         </div>
         
         
-        <form action="" id="contact-page-form">
+        <form action="" id="enquiry-page-form">
             <div class="form-input-div">
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" placeholder="enter your name">
+                <h5 class="error" id="nameError">Name not entered!</h5>
             </div> 
 
             <div class="form-input-div">
                 <label for="surname">Surname: </label>
                 <input type="text" name="surname" id="surname" placeholder="enter your surname">
+                <h5 class="error" id="surnameError">Surname not entered!</h5>
             </div>
 
             <div class="form-input-div">
                 <label for="email">Email Address</label>
                 <input type="email" name="enail" id="email" placeholder="name@gmail.com">
+                <h5 class="error" id="emailError">Email not entered or is incorrectly Formatted!</h5>
             </div>
             
             <div class="form-input-div">
@@ -100,4 +103,22 @@
     </footer>
 
 </body>
+
+<script>
+    const form = document.getElementById('enquiry-page-form');
+    const nameInput = document.getElementById('name');
+    const nameError = document.getElementById('nameError');
+
+    const surnameInput = document.getElementById('surname');
+    const surnameError = document.getElementById('surnameError');
+
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('emailError');
+
+
+    form.addEventListener('submit', (event) => {
+       event.preventDefault();
+       console.log('submit button clicked!!')
+    });
+</script>
 </html>
