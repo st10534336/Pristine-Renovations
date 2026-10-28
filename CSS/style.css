@@ -696,6 +696,7 @@ nav {
 
 .error {
     color: rgb(255, 29, 67);
+    visibility:hidden;
 
 }
 #submit-button {

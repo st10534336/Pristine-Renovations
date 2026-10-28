@@ -49,7 +49,7 @@
 
             <div class="form-input-div">
                 <label for="email">Email Address</label>
-                <input type="email" name="enail" id="email" placeholder="name@gmail.com">
+                <input type="email" name="email" id="email" placeholder="name@gmail.com">
                 <h5 class="error" id="emailError">Email not entered or is incorrectly Formatted!</h5>
             </div>
             
@@ -115,10 +115,44 @@
     const emailInput = document.getElementById('email');
     const emailError = document.getElementById('emailError');
 
+    var allChecksPassed = true;
 
     form.addEventListener('submit', (event) => {
        event.preventDefault();
-       console.log('submit button clicked!!')
+       
+       allChecksPassed = true;
+
+       nameError.style.visibility = "hidden";
+       surnameError.style.visibility  = "hidden";
+       emailError.style.visibility = "hidden";
+
+       if (nameInput.value == "") {
+            nameError.style.visibility = "visible";
+            allChecksPassed = false;
+       }
+       if (surnameInput.value == "") {
+            surnameError.style.visibility = "visible";
+            allChecksPassed = false;
+       }
+       
+       if (!checkEmailValidity(emailInput.value)) {
+            emailError.style.visibility = "visible";
+            allChecksPassed = false;
+       }
+
+       console.log('submit button clicked!!');
+       if (allChecksPassed) {
+            console.log("all checks successfully passed, enquiry sent");
+       }
+       
+       
     });
+
+    function checkEmailValidity(email) {
+        // Checks for: characters + @ + characters + . + characters
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+
+    }
 </script>
 </html>
