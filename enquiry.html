@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content=" This is the Enquiry page of Pristine Renovations where you can make an enquiry about servieces that you are interested in">
+    <meta name="keywords" content=" contact-page previous-renovations pristine renovations phone form po-box address">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Frank Taguemkam-Tokam">
+
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/png" href="Images/Prestine Renovations Logo.png">
+</head>
+<body>
+    <header >
+        <a href="home.html" id="logo-link"><img id="logo" src="Images\Prestine Renovations Logo.png" alt="Prestine Renovations logo"></a>
+        <nav >
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" >Contact</a>
+            <a href="enquiry.html" id="current-webpage">Enquiry</a>
+
+        </nav>
+        
+    </header>
+
+    <main class="container">
+        <div class="hero-section" id="hero-section-contact">
+            <h1 class="hero-section-header">Make an Enquiry</h1>
+        </div>
+        
+        
+        <form action="" id="contact-page-form">
+            <div class="form-input-div">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="enter your name">
+            </div> 
+
+            <div class="form-input-div">
+                <label for="surname">Surname: </label>
+                <input type="text" name="surname" id="surname" placeholder="enter your surname">
+            </div>
+
+            <div class="form-input-div">
+                <label for="email">Email Address</label>
+                <input type="email" name="enail" id="email" placeholder="name@gmail.com">
+            </div>
+            
+            <div class="form-input-div">
+                <label for="budget">Budget:</label>
+                <select id="budget" name="plan">
+                    <option value="small">A small budget within a range of R30000-R150000 (small cosmetic renovation changes)</option>
+                    <option value="medium">A medium budget within a range of R150000 - R499999 (complete kitchen and bathroom overhaul)</option>
+                    <option value="large">A large budget from R500000 (for structural changes to complete home renovations)</option>
+                </select>
+                <h4 id="budget-disclaimer">do keep in mind that what you can do with your budget varies depending on what you want to do, your budget is not restricted to our examples, but we only accept renovations with an intial budget of R30000+</h4>
+            </div>
+            
+            <div class="form-input-div">
+                <label for="typeOfRenovation">Type of renovation</label>
+                <select name="typeOfRenovation" id="typeOfRenovation">
+                    <option value="cosmetic">Cosmetic Renovations (does not alter the structure of building)</option>
+                    <option value="structural">Structural Renovations (minor or major alterations to the structure)</option>
+                    <option value="restoration">Restoring an old structure to it's best shape and most original look</option>
+                    <option value="remodelling">Converting spaces by modifying their funtion and layout e.g turn an attic into a bedroom or office</option>
+                </select>
+            </div>
+            
+            <div class="form-input-div">
+                <label for="areaType">Type of Area</label>
+                <select name="areaType" id="areaType">
+                    <option value="room">Bedroom/Living area</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="backyard">Backyard</option>
+                    <option value="other">Basement, Attic, Other..</option>
+
+                </select>
+            </div>
+            
+            <div class="form-input-div">
+                <label for="IndoorOrOutdoor">Indoors Or Outdoors?</label>
+                <select name="indoorsOrOutdoors" id="indoorsOrOutdoors">
+                    <option value="Indoors">Indoors</option>
+                    <option value="Outdoors">Outdoors</option>
+                </select>
+            </div>
+            
+            <button type="submit" id="submit-button">Send Enquiry</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        &copy; ST10534336
+    </footer>
+
+</body>
+</html>

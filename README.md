@@ -85,6 +85,7 @@ The goal of this website is to help a company by the name of Pristine Renovation
 ![Mobile responsiveness image 3](Images/mobile-3.png)
 
 
+
 <br>
 <br>
 

@@ -677,6 +677,19 @@ nav {
 
 }
 
+#message {
+  resize: none; /* Allows resizing up and down only */
+  width: min(500px, 100%);      /* Makes it responsive to the parent container */
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  &:focus-within {
+    outline: var(--maroon-very-light) 1px solid;
+
+    }
+}
+
 #submit-button {
     margin-top: 3rem;
     width: max-content;
