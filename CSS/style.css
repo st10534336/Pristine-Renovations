@@ -604,6 +604,7 @@ nav {
 
     /*  !!!CRITICAL ATTRIBUTE!!!   */
     visibility: hidden;
+    user-select: none;
 
     & #next-img-button, #previous-img-button {
         background-color: rgb(255, 29, 67);
