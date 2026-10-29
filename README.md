@@ -18,14 +18,19 @@
  |--> Images
 
  |--> JavaScript
+ 
+ -> index.html
 
  -> about.html
 
  -> contact.html
+ 
+ -> enquiry.html
 
  -> gallery.html
 
  -> services.html
+
 
  -> README.md
 

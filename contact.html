@@ -15,9 +15,9 @@
 </head>
 <body>
     <header >
-        <a href="home.html" id="logo-link"><img id="logo" src="Images\Prestine Renovations Logo.png" alt="Prestine Renovations logo"></a>
+        <a href="index.html" id="logo-link"><img id="logo" src="Images\Prestine Renovations Logo.png" alt="Prestine Renovations logo"></a>
         <nav >
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="gallery.html">Gallery</a>
@@ -36,22 +36,26 @@
             <div class="form-input-div">
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" placeholder="enter your name">
+                <h5 class="error" id="nameError">Name not entered!</h5>
             </div> 
 
             <div class="form-input-div">
                 <label for="surname">Surname: </label>
                 <input type="text" name="surname" id="surname" placeholder="enter your surname">
+                <h5 class="error" id="surnameError">Surname not entered!</h5>
             </div>
 
             <div class="form-input-div">
                 <label for="email">Email Address</label>
                 <input type="email" name="enail" id="email" placeholder="name@gmail.com">
+                <h5 class="error" id="emailError">Email not entered or is incorrectly Formatted!!</h5>
             </div>
             
             <div class="form-input-div">
                 <label for="message">Message: </label>
                 <!-- <input type="text" name="surname" id="message" placeholder="Write a message"> -->
                 <textarea id="message" name="message" rows="20" cols="50" placeholder="Type your message here..."></textarea>
+                <h5 class="error" id="messageError">Message field cannot be blank! please write a message</h5>
             </div>
             
             <!-- 
@@ -135,4 +139,65 @@
     </footer>
 
 </body>
+
+<script>
+    const form = document.getElementById('enquiry-page-form');
+    const nameInput = document.getElementById('name');
+    const nameError = document.getElementById('nameError');
+
+    const surnameInput = document.getElementById('surname');
+    const surnameError = document.getElementById('surnameError');
+
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('emailError');
+
+    const messageInput = document.getElementById('message');
+    const messageError = document.getElementById('messageError');
+
+    var allChecksPassed = true;
+
+    form.addEventListener('submit', (event) => {
+       event.preventDefault();
+       
+       allChecksPassed = true;
+
+       nameError.style.visibility = "hidden";
+       surnameError.style.visibility  = "hidden";
+       emailError.style.visibility = "hidden";
+       messageError.style.visibility = "hidden";
+
+       if (nameInput.value == "") {
+            nameError.style.visibility = "visible";
+            allChecksPassed = false;
+       }
+       if (surnameInput.value == "") {
+            surnameError.style.visibility = "visible";
+            allChecksPassed = false;
+       }
+       
+       if (messageInput.value == "") {
+            surnameError.style.visibility = "visible";
+            allChecksPassed = false;
+       }
+
+       if (!checkEmailValidity(emailInput.value)) {
+            emailError.style.visibility = "visible";
+            allChecksPassed = false;
+       }
+
+       console.log('submit button clicked!!');
+       if (allChecksPassed) {
+            console.log("all checks successfully passed, enquiry sent");
+       }
+       
+       
+    });
+
+    function checkEmailValidity(email) {
+        // Checks for: characters + @ + characters + . + characters
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+
+    }
+</script>
 </html>
