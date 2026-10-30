@@ -87,7 +87,7 @@ form.addEventListener('submit', (event) => {
     
 });
 
-warningModal.addEventListener('click', e => {
+warningModalButton.addEventListener('click', e => {
     warningModal.style.visibility = 'hidden';
 })
 successModalButton.addEventListener('click', e => {
