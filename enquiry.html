@@ -12,6 +12,8 @@
     <title>Enquiry</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" type="image/png" href="Images/Prestine Renovations Logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JavaScript/Enquiry.js" defer></script>
 </head>
 <body>
     <header >
@@ -34,7 +36,7 @@
         </div>
         
         
-        <form action="" id="enquiry-page-form">
+        <form action="https://reqres.in" method="POST" id="enquiry-page-form">
             <div class="form-input-div">
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" placeholder="enter your name">
@@ -95,7 +97,23 @@
             <button type="submit" id="submit-button">Send Enquiry</button>
 
         </form>
+        
+        <div class="modal-container" id="warning-modal">
+            <div class="modal">
+                <h4 class="modal-emoji">⚠️</h4>
+                <h4 class="modal-message">Submission Failed! Ensure that All fields are filled and/or correctly formatted</h4>
+                <button type="button" id="warning-modal-button">Ok</button>
+            </div>
 
+        </div>
+        <div class="modal-container" id="success-modal">
+            <div class="modal">
+                <h4 class="modal-emoji">✅</h4>
+                <h4 class="modal-message">Submission Successful! Click "Ok" to proceed</h4>
+                <button type="button" id="success-modal-button">Ok</button>
+            </div>
+
+        </div>
     </main>
 
     <footer>
@@ -103,56 +121,4 @@
     </footer>
 
 </body>
-
-<script>
-    const form = document.getElementById('enquiry-page-form');
-    const nameInput = document.getElementById('name');
-    const nameError = document.getElementById('nameError');
-
-    const surnameInput = document.getElementById('surname');
-    const surnameError = document.getElementById('surnameError');
-
-    const emailInput = document.getElementById('email');
-    const emailError = document.getElementById('emailError');
-
-    var allChecksPassed = true;
-
-    form.addEventListener('submit', (event) => {
-       event.preventDefault();
-       
-       allChecksPassed = true;
-
-       nameError.style.visibility = "hidden";
-       surnameError.style.visibility  = "hidden";
-       emailError.style.visibility = "hidden";
-
-       if (nameInput.value == "") {
-            nameError.style.visibility = "visible";
-            allChecksPassed = false;
-       }
-       if (surnameInput.value == "") {
-            surnameError.style.visibility = "visible";
-            allChecksPassed = false;
-       }
-       
-       if (!checkEmailValidity(emailInput.value)) {
-            emailError.style.visibility = "visible";
-            allChecksPassed = false;
-       }
-
-       console.log('submit button clicked!!');
-       if (allChecksPassed) {
-            console.log("all checks successfully passed, enquiry sent");
-       }
-       
-       
-    });
-
-    function checkEmailValidity(email) {
-        // Checks for: characters + @ + characters + . + characters
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return regex.test(email);
-
-    }
-</script>
 </html>

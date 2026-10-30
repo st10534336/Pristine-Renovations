@@ -778,6 +778,50 @@ nav {
     transition-duration: 1.5s;
 }
 
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.486);
+    z-index: 5;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    visibility: hidden;
+    
+}
+
+.modal {
+    width: min(100%, 500px);
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--maroon-very-light);
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--maroon-font-dark);
+
+    
+    & .modal-emoji {
+        font-size: 3rem;
+    }
+    & button {
+        border: none;
+        color: white;
+
+        background-color: var(--maroon-primary);
+        padding: 0.5rem;
+        width: min(100px, 100%);
+        
+    }
+}
+
 #budget-disclaimer {
     font-size: 1rem;
     color: var(--maroon-font-dark);
