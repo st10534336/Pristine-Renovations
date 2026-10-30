@@ -39,9 +39,6 @@ form.addEventListener('submit', (event) => {
         allChecksPassed = false;
     }
 
-    if (!allChecksPassed) {
-        alert("Submission unsuccessful, please ensure all fields are filled and correctly formatted");
-    }
     console.log('submit button clicked!!');
     if (allChecksPassed) {
         console.log("all checks successfully passed, enquiry sent");
