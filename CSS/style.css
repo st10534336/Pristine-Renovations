@@ -820,6 +820,11 @@ nav {
         background-color: var(--maroon-primary);
         padding: 0.5rem;
         width: min(100px, 100%);
+
+        &:hover {
+            background-color: white;
+            color: var(--maroon-primary);
+        }
         
     }
 }
