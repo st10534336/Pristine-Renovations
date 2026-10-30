@@ -790,6 +790,8 @@ nav {
     padding: 2rem;
 
     visibility: hidden;
+
+    backdrop-filter: blur(10px);
     
 }
 
