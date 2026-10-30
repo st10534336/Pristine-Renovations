@@ -353,10 +353,26 @@ nav {
     }
 }
 
+.map-container {
+    display: flex;
+    flex-flow: column;
+    padding: var(--default-text-padding);
+    gap: 1rem;
+    color: white;
+    text-align: center;
+    background-color: var(--maroon-primary);
+    font-size: 1.5rem;
+    & iframe {
+        border-radius: 1rem;
+        align-self: center;
+    }
+
+}
+
 #about-page-call-to-action {
     
     position: relative;
-    min-height: 50vh; 
+    min-height: 70vh; 
     background-image: url('../Images/Prestine\ Renovations\ Photo\ 3.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -370,7 +386,8 @@ nav {
 
     z-index: 0;
 
-    color: var(--maroon-primary);
+    color: white;
+    
 
     h1 {
         max-width: 1000px;
@@ -378,6 +395,8 @@ nav {
         font-size: 4rem;
         margin-bottom: 1rem;
         text-align: center;
+        backdrop-filter: blur(5px);
+    
     }
 }
 

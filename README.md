@@ -77,6 +77,7 @@ The goal of this website is to help a company by the name of Pristine Renovation
     <li>added Form Validation using AJAX</li>
     <li>added a lightbox to the Gallery so images can be seen much larger</li>
     <li>Added a warning modal and success modal for the forms for feedback to the user</li>
+    <li>Added a map to the about page of the website</li>
 </ul>
 
 </ul>

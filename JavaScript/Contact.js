@@ -29,16 +29,16 @@ form.addEventListener('submit', (event) => {
     emailError.style.visibility = "hidden";
     messageError.style.visibility = "hidden";
 
-    if (nameInput.value == "") {
+    if (nameInput.value.trim() == "") {
         nameError.style.visibility = "visible";
         allChecksPassed = false;
     }
-    if (surnameInput.value == "") {
+    if (surnameInput.value.trim() == "") {
         surnameError.style.visibility = "visible";
         allChecksPassed = false;
     }
     
-    if (messageInput.value == "") {
+    if (messageInput.value.trim() == "") {
         messageError.style.visibility = "visible";
         allChecksPassed = false;
     }

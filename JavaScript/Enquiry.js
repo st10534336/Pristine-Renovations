@@ -25,11 +25,11 @@ form.addEventListener('submit', (event) => {
     surnameError.style.visibility  = "hidden";
     emailError.style.visibility = "hidden";
 
-    if (nameInput.value == "") {
+    if (nameInput.value.trim() == "") {
         nameError.style.visibility = "visible";
         allChecksPassed = false;
     }
-    if (surnameInput.value == "") {
+    if (surnameInput.value.trim() == "") {
         surnameError.style.visibility = "visible";
         allChecksPassed = false;
     }
