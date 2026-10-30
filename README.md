@@ -18,6 +18,9 @@
  |--> Images
 
  |--> JavaScript
+ ------> Contact.js
+ ------> Enquiry.js
+ ------> Gallery.js
  
  -> index.html
 
@@ -58,10 +61,24 @@ The goal of this website is to help a company by the name of Pristine Renovation
 <br>
 
 <h2 style="color: crimson">CHANGELOG</h2>
-
-<ul style="gap: 1.5rem; display:flex; flex-flow:column;">
+<h3> Part 1 <h3>
+<ul style="gap: 1.5rem; display:flex; flex-flow:column;"> 
     <li>began with structuring the website and adding the content plus the images required for the gallery to get an overall picture of what things will be on what page</li>
-    <li>added css to improve look of the website and give it character</li>
+</ul>
+<h3> Part 2 <h3>
+<ul style="gap: 1.5rem; display:flex; flex-flow:column;"> 
+     <li>added css to improve look of the website and give it character</li>
+     <li>Subtle Transions were added to elements</li>
+
+</ul>
+<h3> Part 3 <h3>
+<ul style="gap: 1.5rem; display:flex; flex-flow:column;"> 
+    <li>added javascript to the website for more dynamic functionality</li>
+    <li>added Form Validation using AJAX</li>
+    <li>added a lightbox to the Gallery so images can be seen much larger</li>
+    <li>Added a warning modal and success modal for the forms for feedback to the user</li>
+</ul>
+
 </ul>
 
 <br>
