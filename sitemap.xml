@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://sitemaps.org">
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
-    <loc>https://yourdomain.com</loc>
-    <priority>1.0</priority>
+       <loc>https://st10534336.github.io/Pristine-Renovations/index.html</loc>
+       <lastmod>2026-10-30T17:22:18+00:00</lastmod>
+       <priority>1.0000</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com</loc>
-    <priority>0.8</priority>
+       <loc>https://st10534336.github.io/Pristine-Renovations/about.html</loc>
+       <lastmod>2026-10-30T17:22:17+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com</loc>
-    <priority>0.8</priority>
+       <loc>https://st10534336.github.io/Pristine-Renovations/services.html</loc>
+       <lastmod>2026-10-30T17:22:17+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com</loc>
-    <priority>0.7</priority>
+       <loc>https://st10534336.github.io/Pristine-Renovations/gallery.html</loc>
+       <lastmod>2026-10-30T17:22:17+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com</loc>
-    <priority>0.5</priority>
+       <loc>https://st10534336.github.io/Pristine-Renovations/contact.html</loc>
+       <lastmod>2026-10-30T17:22:17+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com</loc>
-    <priority>0.5</priority>
+       <loc>https://st10534336.github.io/Pristine-Renovations/enquiry.html</loc>
+       <lastmod>2026-10-30T17:22:18+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
 </urlset>
