@@ -875,6 +875,10 @@ footer {
     font-size: 1.2rem;
 }
 
+#footer-datetime {
+    font-size: 1rem;
+}
+
 .slide-in-animated-element {
     animation: slideIn;
     animation-timeline: view();
